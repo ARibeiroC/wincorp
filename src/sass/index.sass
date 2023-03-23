@@ -1,0 +1,330 @@
+@import 'mixins'
+@import 'variable'
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap')
+
+* 
+    @include defaultpage
+    font-family: 'Montserrat', sans-serif 
+    scroll-behavior: smooth 
+    //overflow: scroll
+
+    body
+        display: flex
+        justify-content: center
+        background: $blackColor
+               
+
+        main
+            display: flex
+            flex-direction: column
+            align-items: center
+            overflow-x: hidden
+
+            #backTop
+                //display: none
+                transition: .8s  cubic-bezier(0.68, -0.6, 0.32, 1.6)    
+                box-shadow: 2px 2px 4px #666
+                position: fixed
+                width: 10vw
+                height: 5vh
+                background: $whiteColor
+                border-radius: 50%
+                border: 1px solid $orangeDefault
+                top: -10vh
+                right: 5vw
+                text-align: center
+
+                a
+                    font-size: 1rem
+                    color: $orangeDefault
+                    text-decoration: none
+                    line-height: 5vh
+
+
+            header
+                display: flex
+                align-items: center
+                flex: 0.1
+                justify-content: space-between
+                padding: 0%
+                width: 100%
+                height: 12vh
+                border-bottom: 1px solid $orangeDefault 
+                background: rgba(255, 255, 255, 0.98)
+
+                #logo
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    width: 100%
+                    padding: 2%
+
+                    //Imagem do Logotipo
+                    #imgLogo
+                        width: auto
+                        height: 100%
+                        img
+                            width: 60px
+                            height: 60px
+                            border-radius: 50%
+                            border: 1px solid $orangeDefault
+
+                    //Controle de Menu
+                    #menuControl
+                        display: flex
+                        flex-direction: column
+
+                        width: 10%
+                        height: 100%
+                        cursor: pointer
+                        
+                        #checkbox
+                            display: none
+                            width: 3vw
+                            height: 3vh
+                                         
+                        #iconMenu
+                            display: flex
+                            flex-direction: column
+                            justify-content: center
+                            align-items: center
+
+                            position: absolute
+                            height: 8vh
+                            width: 15vw
+                            right: 0
+                            top: 2vh                          
+
+                            span
+                                background: $orangeDefault
+                                border-radius:10px
+                                height: 1vh
+                                width: 70%
+                                margin: 2px 0
+
+                        nav
+                            display: flex
+                            transition: .8s  cubic-bezier(0.68, -0.6, 0.32, 1.6)
+                            flex-direction: column
+                            justify-content: start
+                            align-items: center
+
+                            position: absolute
+                            height: 70vh
+                            right: 0
+                            width: 0vw
+                            top: 12vh
+                            background: rgba(255, 255, 255, 1)
+                            overflow-x: hidden
+                            scroll-behavior: smooth
+                            
+
+                            a       
+                                display: flex
+                                flex: 1
+                                justify-content: center
+                                align-items: center
+                            
+                                border-bottom: 1px solid                       
+                                width: 100%
+                                font-size: 1.6rem
+                                color: $orangeDefault
+
+                            a:hover
+                                background: $orangeDefault
+                                color: $whiteColor
+
+            #home
+                //margin-top: 12vh
+                height: 70vh
+                background: url('../image/background-home.jpg') no-repeat center
+                background-size: cover
+                //background-color: #000              
+                color: $whiteColor
+                
+
+                #bgimg
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+
+                    padding: 6%
+                    background: rgba(0 ,0 ,0 , 0.9)
+                    height: 100%                  
+
+                    #chamada
+
+                        h1
+                            font-size: 3rem
+                            //font-weight: bolder
+                            color: $orangeDefault
+                            text-shadow: 0px 0px 20px $darkOrange
+
+                        h2
+                            margin-top: 25px
+                            font-size: 1.3rem
+                            font-weight: bolder
+                        
+                        h3
+                            margin-top: 25px
+                            font-size: 0.9rem
+
+
+                    #btn
+                        display: flex
+                        justify-content: end
+                        margin-top: 25px
+
+                        button
+                            height: 65px
+                            width: 180px
+                            background: transparent
+                            border-radius: 10px
+                            border-left: 1px solid $whiteColor
+                            border-top: 1px solid $whiteColor
+                            border-right: 1px solid #333
+                            border-bottom: 1px solid #333
+
+                            // FONTE
+                            color: $whiteColor
+                            font-weight: bolder
+                            font-size: 1rem
+
+                        button:hover
+                            background: $orangeDefault
+                            border-left: 2px solid #444
+                            border-top: 2px solid #444
+                            border-right: 2px solid $whiteColor
+                            border-bottom: 2px solid $whiteColor
+            
+            #belt
+                display: flex
+                align-items: center
+                background: #f82
+                height: 12vh
+                overflow-x: scroll
+                p   
+                    display: flex
+                    align-items: center
+                    justify-content: center
+
+                    width: 50%
+                    padding: 2%
+                    height: 50%
+                    border-right: 1px solid
+                    font-size: 0.7rem
+                    text-align: center
+                    color: $whiteColor
+                
+                #last
+                    border: none
+
+            #about
+                //margin-top: 12vh
+                height: 70vh
+                background: url('../image/about.jpg') no-repeat center fixed
+                background-size: 200% 100%
+
+                #filter
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.6), rgba(0,0,0,0.6),rgba(218,221,228,0.9))
+                    width: 100%
+                    height: 100%
+
+                    #txtAbout
+                        display: flex
+                        flex-direction: column
+                        width: 90%
+
+                        h2
+                            padding: 2%
+                            color: $orangeDefault
+                            font-size: 1.8rem
+
+                        p
+                            color: $whiteColor
+                            padding: 4%
+                            //text-shadow: 1px 1px 1px #fff
+            
+            #works
+                display: flex
+                flex-direction: column
+                align-items: center
+
+                background: url('../image/backgroundOrange2.jpg') no-repeat top
+                background-size: 300% 100%
+                //background: $orangeDefault
+                height: auto
+                width: 100%
+
+                #workFilter
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    margin: 0 0 6% 0
+
+                    height: 100%
+                    width: 100%
+                    //background: rgba(0, 0, 0,0.7)                
+
+                    #titleWorks
+                        padding: 5%
+                        font-size: 2.2rem
+                        color: $orangeDefault
+                        text-shadow: 3px 3px 2px #111
+                        //border-bottom: 3px dotted $blackColor
+                    
+                    .container
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        gap: 0.8rem
+
+                        margin-top: 6%
+                        padding: 6% 0 0 0
+                        
+                        width: 80%
+                        //border: 3px dotted $orangeDefault
+                        border-radius: 15px
+                        background: $whiteColor
+
+                        .title  
+                            text-align: center
+                            font-size: 1.4rem
+                            font-weight: bold
+                        
+                        .subtitle
+                            text-align: center
+                            font-size: 1rem
+
+                        .imgEvent
+                            display: flex
+                            justify-content: center
+                            align-items: center
+
+                            padding: 6% 0
+                            border-top: 3px dotted
+                            margin-bottom: 4%
+                            //background: #fff
+                            width: 85%
+                            //border-radius: 18px
+
+                            img
+                                max-width: 100%
+
+            footer
+                display: flex
+                justify-content: center
+                align-items: center
+                color: $whiteColor
+                height: 10vh
+
+
+
+
+            
+
+
