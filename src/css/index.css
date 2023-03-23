@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  width: 100vw;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
@@ -10,12 +11,13 @@
   display: flex;
   justify-content: center;
   background: #000;
+  width: 100vw;
 }
 * body main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-x: hidden;
+  width: 100vw;
 }
 * body main #backTop {
   transition: 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
@@ -27,7 +29,7 @@
   border-radius: 50%;
   border: 1px solid #f82;
   top: -10vh;
-  right: 5vw;
+  right: 8vw;
   text-align: center;
 }
 * body main #backTop a {
@@ -42,7 +44,7 @@
   flex: 0.1;
   justify-content: space-between;
   padding: 0%;
-  width: 100%;
+  width: 100vw;
   height: 12vh;
   border-bottom: 1px solid #f82;
   background: rgba(255, 255, 255, 0.98);
@@ -67,9 +69,10 @@
 * body main header #logo #menuControl {
   display: flex;
   flex-direction: column;
-  width: 10%;
+  width: 15%;
   height: 100%;
   cursor: pointer;
+  border: 1px solid red;
 }
 * body main header #logo #menuControl #checkbox {
   display: none;
@@ -81,11 +84,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
   height: 8vh;
   width: 15vw;
-  right: 0;
-  top: 2vh;
 }
 * body main header #logo #menuControl #iconMenu span {
   background: #f82;
@@ -104,10 +104,15 @@
   height: 70vh;
   right: 0;
   width: 0vw;
-  top: 12vh;
   background: rgb(255, 255, 255);
   overflow-x: hidden;
   scroll-behavior: smooth;
+  top: 12vh;
+}
+@media (max-width: 414px) {
+  * body main header #logo #menuControl nav {
+    top: 9.9vh;
+  }
 }
 * body main header #logo #menuControl nav a {
   display: flex;
@@ -128,6 +133,7 @@
   background: url("../image/background-home.jpg") no-repeat center;
   background-size: cover;
   color: #fff;
+  width: 100vw;
 }
 * body main #home #bgimg {
   display: flex;
@@ -137,17 +143,25 @@
   background: rgba(0, 0, 0, 0.9);
   height: 100%;
 }
+* body main #home #bgimg #chamada {
+  width: 100%;
+  border: 1px solid white;
+}
 * body main #home #bgimg #chamada h1 {
+  width: 100%;
+  border: 1px solid white;
   font-size: 3rem;
   color: #f82;
   text-shadow: 0px 0px 20px #9c4f0b;
 }
 * body main #home #bgimg #chamada h2 {
+  width: 100%;
   margin-top: 25px;
   font-size: 1.3rem;
   font-weight: bolder;
 }
 * body main #home #bgimg #chamada h3 {
+  width: 100%;
   margin-top: 25px;
   font-size: 0.9rem;
 }
@@ -155,6 +169,7 @@
   display: flex;
   justify-content: end;
   margin-top: 25px;
+  width: 100%;
 }
 * body main #home #bgimg #btn button {
   height: 65px;
@@ -182,6 +197,7 @@
   background: #f82;
   height: 12vh;
   overflow-x: scroll;
+  width: 100vw;
 }
 * body main #belt p {
   display: flex;
@@ -194,6 +210,7 @@
   font-size: 0.7rem;
   text-align: center;
   color: #fff;
+  border: 1px solid white;
 }
 * body main #belt #last {
   border: none;
@@ -201,13 +218,13 @@
 * body main #about {
   height: 70vh;
   background: url("../image/about.jpg") no-repeat center fixed;
-  background-size: 200% 100%;
+  background-size: cover;
+  width: 100vw;
 }
 * body main #about #filter {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(218, 221, 228, 0.9));
   width: 100%;
   height: 100%;
@@ -215,16 +232,19 @@
 * body main #about #filter #txtAbout {
   display: flex;
   flex-direction: column;
+  gap: 0.2rem;
   width: 90%;
 }
 * body main #about #filter #txtAbout h2 {
-  padding: 2%;
+  width: 100%;
+  padding: 1rem 0.2rem;
   color: #f82;
   font-size: 1.8rem;
 }
 * body main #about #filter #txtAbout p {
+  width: 100%;
   color: #fff;
-  padding: 4%;
+  padding: 1rem;
 }
 * body main #works {
   display: flex;
@@ -233,7 +253,7 @@
   background: url("../image/backgroundOrange2.jpg") no-repeat top;
   background-size: 300% 100%;
   height: auto;
-  width: 100%;
+  width: 100vw;
 }
 * body main #works #workFilter {
   display: flex;
@@ -287,6 +307,7 @@
   align-items: center;
   color: #fff;
   height: 10vh;
+  width: 100vw;
 }
 
 /*# sourceMappingURL=index.css.map */
