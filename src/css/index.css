@@ -72,7 +72,6 @@
   width: 15%;
   height: 100%;
   cursor: pointer;
-  border: 1px solid red;
 }
 * body main header #logo #menuControl #checkbox {
   display: none;
@@ -101,15 +100,15 @@
   justify-content: start;
   align-items: center;
   position: absolute;
+  top: 12vh;
   height: 70vh;
   right: 0;
   width: 0vw;
   background: rgb(255, 255, 255);
   overflow-x: hidden;
   scroll-behavior: smooth;
-  top: 12vh;
 }
-@media (max-width: 414px) {
+@media (min-width: 414px) {
   * body main header #logo #menuControl nav {
     top: 9.9vh;
   }
@@ -122,11 +121,20 @@
   border-bottom: 1px solid;
   width: 100%;
   font-size: 1.6rem;
+  text-decoration: none;
+  font-weight: 600;
   color: #f82;
+}
+* body main header #logo #menuControl nav a p {
+  width: 100%;
+  text-align: center;
 }
 * body main header #logo #menuControl nav a:hover {
   background: #f82;
   color: #fff;
+}
+* body main header #logo #menuControl .active {
+  width: 100%;
 }
 * body main #home {
   height: 70vh;
@@ -145,11 +153,9 @@
 }
 * body main #home #bgimg #chamada {
   width: 100%;
-  border: 1px solid white;
 }
 * body main #home #bgimg #chamada h1 {
   width: 100%;
-  border: 1px solid white;
   font-size: 3rem;
   color: #f82;
   text-shadow: 0px 0px 20px #9c4f0b;

@@ -13,39 +13,46 @@ const menuContact = document.querySelector('#menuContact')
 
 // Escutando Clicks
 function listens(){
-    checkbox.addEventListener("click", controlMenu)
-    iconMenu.addEventListener("click", controlMenu)
-    menuHome.addEventListener("click", controlMenu)
-    menuAbout.addEventListener("click", controlMenu)
-    menuWork.addEventListener("click", controlMenu)
-    menuWorkUs.addEventListener("click", controlMenu)
-    menuContact.addEventListener("click", controlMenu)
+    iconMenu.addEventListener('click', activeMenu)
+    // checkbox.addEventListener("click", controlMenu)
+    // iconMenu.addEventListener("click", controlMenu)
+    menuHome.addEventListener("click", activeMenu)
+    menuAbout.addEventListener("click", activeMenu)
+    menuWork.addEventListener("click", activeMenu)
+    menuWorkUs.addEventListener("click", activeMenu)
+    menuContact.addEventListener("click", activeMenu)
     
-    document.addEventListener('scroll', showAndHiddenButtonBackToTop)
+    // document.addEventListener('scroll', showAndHiddenButtonBackToTop)
 }
 
-function showAndHiddenButtonBackToTop() {
-    if (document.documentElement.scrollTop > 10) {
-        backTop.style.top = '90vh'
-    } else {
-        backTop.style.top = '-10vh'
-    }
-  }
-
-
-function btnMenu(){
-    if (!checkbox.checked){
-        checkbox.setAttribute("checked", "true")
-    }else{
-        checkbox.removeAttribute('checked')
-    }    
+function activeMenu(){
+    areaMenu.classList.toggle('active')
 }
 
-function controlMenu(){
-    btnMenu()
-    if (checkbox.checked){
-        areaMenu.style.width = '100vw'
-    }else{
-        areaMenu.style.width = '0vw'
-    }    
-}
+
+// function showAndHiddenButtonBackToTop() {
+//     if (document.documentElement.scrollTop > 10) {
+//         backTop.style.top = '90vh'
+//     } else {
+//         backTop.style.top = '-10vh'
+//     }
+// }
+
+
+// function btnMenu(){
+//     if (!checkbox.checked){
+//         checkbox.setAttribute("checked", "true")
+//     }else{
+//         checkbox.removeAttribute('checked')
+//     }
+     
+// }
+
+// function controlMenu(){
+//     btnMenu()
+//     if (checkbox.checked){
+//         areaMenu.style.width = '100vw'
+//     }else{
+//         areaMenu.style.width = '0vw'
+//     }    
+// }
