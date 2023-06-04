@@ -299,12 +299,13 @@
   justify-content: center;
   align-items: flex-start;
   margin-bottom: 4%;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 * body main #curses #cursesFilter #cursos .container .imgEvent img {
-  width: 60%;
+  width: 150px;
+  height: 150px;
   background: white;
-  border: 1px solid darkgreen;
   border-radius: 50%;
   box-shadow: 5px 5px 8px;
 }
@@ -332,13 +333,21 @@
 * body main #curses #cursesFilter #cursos .container .info .description p {
   max-width: 100%;
 }
-* body main #curses #cursesFilter #cursos .container .info .hour {
+* body main #curses #cursesFilter #cursos .container .info .workload {
   max-width: 100%;
   text-align: start;
   font-size: 1rem;
 }
-* body main #curses #cursesFilter #cursos .container .info .hour span {
+* body main #curses #cursesFilter #cursos .container .info .workload span {
   font-weight: 700;
+}
+* body main #curses #cursesFilter #cursos .container .info .ttClasses {
+  max-width: 100%;
+  text-align: start;
+  font-size: 1rem;
+}
+* body main #curses #cursesFilter #cursos .container .info .ttClasses span {
+  font-weight: 900;
 }
 * body main footer {
   display: flex;
