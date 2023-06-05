@@ -5,7 +5,43 @@
     box-sizing: border-box
     width: 100vw
 
+@mixin displayFlexAlign ($justify, $align)
+    display: flex
+    justify-content: $justify
+    align-items: $align
+
 
 @mixin responsive414
     @media (min-width: 414px)
         @content
+
+@mixin labelInfo
+    .labelInfo
+        flex: 1
+        font-weight: 900
+
+@mixin priceValue
+    .priceValue
+        flex: 1
+        font-weight: 900
+        text-align: end
+        font-size: 1.6rem
+        color: $orangeDefault
+        border: 1px inset
+        width: 100%
+
+@mixin valueLabelInfo
+    .valueLabelInfo
+        flex: 1
+        padding: 0% 4%
+        border: 1px inset 
+        width: 100%
+        text-align: end
+
+@mixin cardInfoCurses
+    @include displayFlexAlign (space-between, center)
+    @include labelInfo        
+    @include valueLabelInfo
+    @include priceValue
+    
+    

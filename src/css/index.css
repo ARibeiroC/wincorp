@@ -288,7 +288,7 @@
   margin-top: 6%;
   max-width: 100%;
   max-height: 100%;
-  padding: 4%;
+  padding: 8% 4%;
   border: 1px solid transparent;
   border-radius: 15px;
   background: #fff;
@@ -324,7 +324,7 @@
 }
 * body main #curses #cursesFilter #cursos .container .info .description {
   max-width: 100%;
-  text-align: start;
+  text-align: justify;
   font-size: 1rem;
 }
 * body main #curses #cursesFilter #cursos .container .info .description h3 {
@@ -334,20 +334,103 @@
   max-width: 100%;
 }
 * body main #curses #cursesFilter #cursos .container .info .workload {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 100%;
   text-align: start;
   font-size: 1rem;
 }
-* body main #curses #cursesFilter #cursos .container .info .workload span {
-  font-weight: 700;
+* body main #curses #cursesFilter #cursos .container .info .workload .labelInfo {
+  flex: 1;
+  font-weight: 900;
+}
+* body main #curses #cursesFilter #cursos .container .info .workload .valueLabelInfo {
+  flex: 1;
+  padding: 0% 4%;
+  border: 1px inset;
+  width: 100%;
+  text-align: end;
+}
+* body main #curses #cursesFilter #cursos .container .info .workload .priceValue {
+  flex: 1;
+  font-weight: 900;
+  text-align: end;
+  font-size: 1.6rem;
+  color: #f82;
+  border: 1px inset;
+  width: 100%;
 }
 * body main #curses #cursesFilter #cursos .container .info .ttClasses {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 100%;
   text-align: start;
-  font-size: 1rem;
 }
-* body main #curses #cursesFilter #cursos .container .info .ttClasses span {
+* body main #curses #cursesFilter #cursos .container .info .ttClasses .labelInfo {
+  flex: 1;
   font-weight: 900;
+}
+* body main #curses #cursesFilter #cursos .container .info .ttClasses .valueLabelInfo {
+  flex: 1;
+  padding: 0% 4%;
+  border: 1px inset;
+  width: 100%;
+  text-align: end;
+}
+* body main #curses #cursesFilter #cursos .container .info .ttClasses .priceValue {
+  flex: 1;
+  font-weight: 900;
+  text-align: end;
+  font-size: 1.6rem;
+  color: #f82;
+  border: 1px inset;
+  width: 100%;
+}
+* body main #curses #cursesFilter #cursos .container .info .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  text-align: start;
+}
+* body main #curses #cursesFilter #cursos .container .info .price .labelInfo {
+  flex: 1;
+  font-weight: 900;
+}
+* body main #curses #cursesFilter #cursos .container .info .price .valueLabelInfo {
+  flex: 1;
+  padding: 0% 4%;
+  border: 1px inset;
+  width: 100%;
+  text-align: end;
+}
+* body main #curses #cursesFilter #cursos .container .info .price .priceValue {
+  flex: 1;
+  font-weight: 900;
+  text-align: end;
+  font-size: 1.6rem;
+  color: #f82;
+  border: 1px inset;
+  width: 100%;
+}
+* body main #curses #cursesFilter #cursos .container .info .btnMatricula {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+* body main #curses #cursesFilter #cursos .container .info .btnMatricula .btnCardCurses {
+  background-color: #f82;
+  border-top: 1px #fff outset;
+  border-left: 1px #fff outset;
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 * body main footer {
   display: flex;
